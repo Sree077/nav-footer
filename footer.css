@@ -3,14 +3,14 @@
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    flex-wrap: wrap; /* Allows the footer content to wrap as needed */
+    flex-wrap: wrap; 
 }
 
 .footer .quick-links ul,
-.footer .contact-info ul { /* Added for contact info if needed */
+.footer .contact-info ul {
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Removes default margin for cleaner alignment */
+    margin: 0; 
 }
 
 .footer .contact-info img {

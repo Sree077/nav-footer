@@ -6,11 +6,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Example font */
+    font-family: Arial, sans-serif; 
 }
 
 .nav-bar {
-    background-color: #EDEDED; /* Dark background color */
+    background-color: #EDEDED; 
     overflow: hidden;
 }
 
@@ -22,7 +22,6 @@ body {
 }
 
 .logo img {
-     /* Adjust logo size */
     height: 50px;
     padding-left: 2em;
     margin-left: 2em;
@@ -51,7 +50,7 @@ body {
 }
 
 .nav-links ul li a:hover {
-    color: #DA0037; /* Light grey on hover */
+    color: #DA0037; 
 }
 .hamburger {
     display: none;
@@ -98,7 +97,7 @@ body {
     .nav-links ul {
         flex-direction: column;
         width: 100%;
-        display: none; /* Hide the navigation links initially */
+        display: none; 
     }
      .logo{
         padding-right: 5em;
@@ -110,7 +109,7 @@ body {
     }
 
     .nav-links ul.active {
-        display: block; /* Show the navigation links when active */
+        display: block;
     }
 
     .nav-bar nav {
@@ -130,5 +129,4 @@ body {
 }
 
 
-/* Add this in your HTML just inside the <nav> before the .logo div for the hamburger menu icon */
 

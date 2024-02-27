@@ -14,10 +14,10 @@ body {
 }
 .contact-h2{
     margin: 1.5em 0 0 2em;
-    transform: translate(15%,300%);
+   
 }
 .container {
-    transform: translate(15%,20%);
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

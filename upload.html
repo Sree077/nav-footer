@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Inputs</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <h2>Form-Input</h2>
+    <div class="input-fields">
+        <div class="input-text">
+            <label for="upload-title">Title:</label>
+            <input type="text" name="title" id="upload-title">
+        </div>
+        <div class="input-file">
+            <label for="upload-file">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v4.1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-4.1a.5.5 0 0 1 1 0v4.1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-4.1a.5.5 0 0 1 .5-.5z"/>
+                    <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+                </svg>
+                Upload File
+            </label>
+            <input type="file" name="file" id="upload-file">
+            <span id="file-upload-name"></span>
+        </div>
+    </div>
+    <script>
+        document.getElementById('upload-file').addEventListener('change', function() {
+            var fileName = this.files[0].name;
+            document.getElementById('file-upload-name').textContent = "Uploaded: " + fileName;
+        });
+    </script>
+</body>
+</html>
